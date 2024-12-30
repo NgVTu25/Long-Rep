@@ -22,13 +22,12 @@
         <input class="form-control" id="inputPassword" name="password" placeholder="Password" required=""
                type="password"/>
         <label class="sr-only" for="inputFullname">Full Name</label>
-        <label class="sr-only" for="inputRole">Role</label>
+        <input class="form-control" id="inputFullname" name="fullname" placeholder="Full Name" required="" type="text"/>
         <label class="sr-only" for="inputRole">Role</label>
         <select class="form-control" id="inputRole" name="roleName" required>
             <option value="USER">User</option>
             <option value="ADMIN">Admin</option>
         </select>
-        <input class="form-control" id="inputEmail" name="fullname" placeholder="Fullname" required="" type="text"/>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
     </form>
     <form class="form-signin" method="get" th:action="@{/login}">
